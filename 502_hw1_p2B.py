@@ -42,7 +42,7 @@ def Eliminate(A, b):
     return (A, b)
 
 #list of matrix size n
-n = [100, 500, 1000, 5000, 10000]
+n = [100, 200, 300, 400, 500, 600]
 
 #list of time using linalg.solve
 timeL = []
