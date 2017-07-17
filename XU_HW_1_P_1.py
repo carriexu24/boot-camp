@@ -49,15 +49,6 @@ mySolve(A, v)
 
 
 
-#Result
-
-#[ 385  935 1485 2035 2585 3135 3685 4235 4785 5335]
-
-#The equation can not be solved.
-#The equation can not be solved.
-
-
-
 #Problem 1 B.
 
 #build a 10 * 10 array R(e)
@@ -67,13 +58,6 @@ R = numpy.array(R)
 #solve (A+R)x=b and (A+R)x=v and verify the solutions
 mySolve(A+R, b)
 mySolve(A+R, v)
-
-
-
-#Result
-
-#The equation is verified.
-#The equation is verified.
 
 
 
@@ -88,22 +72,3 @@ print abs(list(numpy.dot(A, x)) - b)
 y = numpy.linalg.solve(A+R, v)
 print numpy.dot(A, y)
 print abs(list(numpy.dot(A, y)) - v)
-
-
-
-#Result
-
-#[ 1.01911641  1.01690601  1.01469561  1.01248521  1.01027481  1.00806442
-#  1.00585402  1.00364362  1.00143322  0.99922282]
-
-#[ 0.01911641  0.01690601  0.01469561  0.01248521  0.01027481  0.00806442
-#  0.00585402  0.00364362  0.00143322  0.00077718]
-
-
-#[ 0.96437364  1.96186951  2.95936538  3.95686124  4.95435711  5.95185298
-#  6.94934884  7.94684471  8.94434058  9.94183645]
-
-#[ 0.03562636  0.03813049  0.04063462  0.04313876  0.04564289  0.04814702
-#  0.05065116  0.05315529  0.05565942  0.05816355]
-
-#the errors are quite small, so this noise idea is a good one to answer the question
